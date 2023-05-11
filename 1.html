@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            position: fixed;
+            top: 50px;
+            margin-left: 20%;
+            margin-right: 20%;
+            width: 60%;
+            min-height: 15vh;
+            border-radius: 5px;
+            border: 5px solid black;
+            background: linear-gradient(to left, #d3959b, #bfe6ba);
+            animation: domocolor 4s cubic-bezier(0.43, -0.15, 0.58, 1) infinite alternate;
+        }
+        
+        @keyframes domocolor {
+            0% {
+                background: linear-gradient(to left, #d3959b, #bfe6ba);
+            }
+            100% {
+                background: linear-gradient(to left, #72ed84, #0991db);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="box_img"></div>
+        <div class="text">欢迎来到我的博客</div>
+    </header>
+</body>
+
+</html>
