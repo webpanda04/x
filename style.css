@@ -24,14 +24,14 @@
     }
     
     nav .top {
+        display: flex;
+        justify-content: center;
         width: 100%;
         height: 32px;
         background-color: rgb(77, 77, 77, 0.4);
     }
     
     nav .top ul {
-        position: relative;
-        margin-left: 50vw;
         list-style: none;
     }
     
@@ -39,20 +39,13 @@
         float: left;
         width: 30px;
         height: 30px;
-        margin-left: 20px;
+        margin-left: 50px;
         line-height: 30px;
-    }
-    
-    nav .top ul .text {
-        position: absolute;
-        left: -50px;
-        top: 5px;
-        color: rgb(48, 49, 50);
     }
     
     nav .top ul li a {
         display: inline-block;
-        width: 50px;
+        width: 80px;
         height: 30px;
         text-align: center;
         color: rgb(135, 135, 135);
@@ -133,6 +126,8 @@
     }
     
     main article {
+        cursor: pointer;
+        overflow: hidden;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -150,7 +145,13 @@
         /* border: 1px solid black; */
         background-color: rgb(255, 255, 255);
         box-shadow: 2px 5px 4px 0px rgb(171, 164, 164);
+        transition: all 0.6s;
         ;
+    }
+    
+    main article div:hover {
+        transform: scale(0.9);
+        box-shadow: 10px 13px 6px 0px rgb(171, 164, 164);
     }
     
     main article div a {
@@ -184,4 +185,9 @@
     main article div img {
         width: 100%;
         height: 68%;
+        transition: all 0.6s;
+    }
+    
+    main article div a:hover img {
+        transform: scale(0.8);
     }
