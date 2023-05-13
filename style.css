@@ -18,13 +18,13 @@
         top: 0;
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
         width: 100%;
         height: 50px;
     }
     
     nav .top {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         flex-wrap: nowrap;
         width: 100%;
@@ -38,9 +38,9 @@
     
     nav .top ul li {
         float: left;
-        width: 30px;
-        height: 30px;
-        margin-left: 50px;
+        width: 5%;
+        height: 5%;
+        margin-left: 15%;
         line-height: 30px;
     }
     
@@ -50,8 +50,6 @@
         height: 30px;
         text-align: center;
         color: rgb(0, 0, 0);
-        border-left: 1px solid rgb(135, 135, 135);
-        border-right: 1px solid rgb(135, 135, 135);
         transition: all 0.3s;
         box-sizing: border-box;
         font-size: 14px;
