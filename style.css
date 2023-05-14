@@ -91,17 +91,29 @@
     /* 顶部导航结束 */
     
     section {
+        position: relative;
         display: flex;
         justify-content: center;
         margin-top: 20px;
-        margin-left: 15%;
-        margin-right: 15%;
-        width: 70%;
-        min-height: 10vh;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        min-height: 30vh;
         border: 1px solid black;
         font-weight: 400;
         font-size: 24px;
         border-radius: 5px;
+    }
+    
+    section p {
+        position: absolute;
+        top: 40px;
+        margin-top: 40px
+    }
+    
+    section img {
+        width: 38vh;
+        height: 30vh;
     }
     /* 轮博图结束 */
     
