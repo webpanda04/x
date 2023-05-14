@@ -184,7 +184,7 @@
     
     main article div {
         margin-top: 10px;
-        width: 224px;
+        width: 230px;
         height: 224px;
         text-align: center;
         /* border: 1px solid black; */
@@ -221,6 +221,12 @@
         z-index: 0;
         opacity: 1;
         top: 0px;
+    }
+    
+    main article div a:hover .item {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
     }
     
     main article div a h4 {
