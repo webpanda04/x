@@ -54,4 +54,5 @@ main button {
     height: 3rem;
     border-radius: 10%;
     transition: all 0.4ms;
+    background-color: rgb(105, 105, 105);
 }
