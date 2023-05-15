@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom right, #7fc4f3, #e6e6e7);
+}
+
+main {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    height: 500px;
+    border: 5px solid black;
+    text-align: center;
+    border-radius: 5%;
+    animation: Color 2s linear alternate infinite;
+}
+
+@keyframes Color {
+    0% {
+        color: #e6e6e7;
+        border-color: #e6e6e7;
+    }
+    25% {
+        color: red;
+        border-color: red;
+    }
+    50% {
+        color: rgb(187, 186, 188);
+        border-color: indigo;
+    }
+    100% {
+        color: chartreuse;
+        border-color: chartreuse;
+    }
+}
+
+main .box {
+    width: 50%;
+    height: 50%;
+}
+
+main h2 {
+    padding-top: 100px;
+    color: coral;
+}
+
+main button {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10%;
+    transition: all 0.4ms;
+}

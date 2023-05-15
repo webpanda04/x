@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 随机抽人</title>
+
+    <style>
+        .box {
+            margin: 100px auto;
+            position: relative;
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+        }
+        
+        .box h1 {
+            text-align: center;
+        }
+        
+        .box .bottom {
+            position: absolute;
+            left: 50%;
+            top: 70%;
+            right: 40%;
+        }
+        
+        .box p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>随机点名</h1>
+        <p>
+            hallo
+
+        </p>
+        <div class="bottom">
+            <button class="kaishi">开始</button>
+            <button class="no">结束</button>
+        </div>
+    </div>
+    <script>
+        let arr = ['hallo', '张飞', '关羽', '曹操', '诸葛亮', '马超', '黄忠'];
+
+        function buttom() {
+            const getP = document.querySelector('.box p'); //获取元素
+            const getButtoOpen = document.querySelector('.box .kaishi'); //获取元素
+            getButtoOpen.addEventListener('click', function() {
+                ding = setInterval(function() {
+                    let random = parseInt(Math.random() * arr.length); //随机数组下标
+                    getP.innerHTML = arr[random];
+                }, 40);
+
+            });
+        }
+        buttom();
+
+        function buttom2() {
+            const getButtomNo = document.querySelector('.box .no');
+            getButtomNo.addEventListener('click', function() {
+                clearInterval(ding);
+            });
+        }
+        buttom2()
+    </script>
+</body>
+
+</html>
