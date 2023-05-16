@@ -2,7 +2,7 @@ function sectionP() {
     const arr = [{
         title: '一步一个脚印'
     }, {
-        title: '问多了全是问题 做多了全是答案'
+        title: `问多了全是问题 <br>做多了全是答案`
     }, {
         title: `向上的路，并不拥挤。<br>拥挤是因为，<br>大部分人选择了安逸`
     }, {
