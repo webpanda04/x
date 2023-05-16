@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        main {
+            margin: 100px auto;
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        
+        main .box {
+            cursor: pointer;
+            width: 300px;
+            height: 300px;
+            background-image: url(./img/1.jpg);
+            background-size: cover;
+        }
+        
+        main button {
+            margin-top: 20px;
+            width: 50px;
+            height: 50px;
+        }
+        
+        main p {
+            display: block;
+            text-align: center;
+        }
+        
+        main div {
+            width: 140px;
+            height: 50px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <div class="box">
+
+        </div>
+        <p>hallo</p>
+        <div> <button class="left">上一个</button>
+            <button class="right">下一个</button></div>
+    </main>
+    <script>
+        let arr = [{
+            url: './img/1.jpg',
+            title: '加油少年'
+        }, {
+            url: './img/2.jpg',
+            title: '早上好，后盾人'
+        }, {
+            url: './img/3.jpg',
+            title: '哎呦不错哦'
+        }, {
+            url: './img/4.jpg',
+            title: '一步一个脚印'
+        }, {
+            url: './img/5.jpg',
+            title: '蓝色'
+        }]; //数组定义
+        const getMain = document.querySelector('main');
+        const getBox = document.querySelector('main .box');
+        let random = parseInt(Math.random() * arr.length); //下标数
+        const getLfet = document.querySelector('main .left');
+        const getRight = document.querySelector('main .right');
+        const getMainP = document.querySelector('main p');
+        console.log();
+        let i = 1;
+
+        function buttom() {
+            getLfet.addEventListener('click', function() {
+                i = (i + 1) % arr.length;
+                console.log(`左：${i}`);
+                let n = getBox.style.backgroundImage = `url(${arr[i].url})`;
+                getMainP.innerHTML = `${arr[i].title}`;
+            });
+            getRight.addEventListener('click', function() {
+                if (i <= 0) {
+                    i = 5;
+                }
+                i = (i - 1) % arr.length;
+                let m = getBox.style.backgroundImage = `url(${arr[i].url})`;
+                console.log(`右：${i}`);
+                console.log(m);
+                getMainP.innerHTML = `${arr[i].title}`;
+            });
+        }
+        buttom(); //按钮点击完成
+        let d = setInterval(function() {
+            getLfet.click();
+        }, 1000);
+
+        function mouse() {
+            getMain.addEventListener('mouseenter', function() {
+                clearInterval(d);
+            })
+        }
+        mouse(); //鼠标放上关闭定时器
+
+        // function mousehoverOver() {
+        //     getBox.addEventListener('mousseleave', function() {
+        //         getBox.setInterval = d;
+        //     })
+        // }
+        function mousehoverOver() {
+            getMain.addEventListener('mouseleave', function() {
+                d = setInterval(function() {
+                    const getLfet = document.querySelector('main .left');
+                    getLfet.click();
+                }, 1000);
+            })
+        }
+        mousehoverOver();
+    </script>
+</body>
+
+</html>
