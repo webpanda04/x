@@ -32,7 +32,7 @@
         flex-wrap: nowrap;
         width: 100%;
         height: 32px;
-        background-color: rgb(77, 77, 77, 0.4);
+        background-color: rgb(77, 77, 77, 0.5);
     }
     
     nav .top ul {
@@ -63,9 +63,8 @@
     
     nav .top ul li a:hover {
         color: rgb(242, 246, 250);
-        border-right: 1px solid rgb(135, 135, 135);
-        border-right: 1px solid #313131;
-        box-shadow: inset 1px -1px 5px 4px #928f8f;
+        border: 0px;
+        box-shadow: inset 1px -1px 5px 4px #928f8f82;
         transform: scale(1.1);
     }
     
