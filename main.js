@@ -47,7 +47,7 @@
     const getAside = document.querySelector('aside');
     window.addEventListener('scroll', function() {
         let Aroll = document.documentElement.scrollTop;
-        if (Aroll >= 300) {
+        if (Aroll >= 250) {
             getAside.style.opacity = 1;
             getAside.addEventListener('click', function() {
                 window.scrollTo({
