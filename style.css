@@ -13,6 +13,10 @@
         background-image: url(./img/bj01.jpg);
     }
     
+    .open {
+        display: block;
+    }
+    
     nav {
         z-index: 999;
         width: 100%;
@@ -32,13 +36,14 @@
     }
     
     nav .top ul {
-        width: 22rem;
+        width: 20rem;
         height: 5rem;
         list-style: none;
     }
     
     nav .top ul li {
-        margin-left: 14%;
+        margin-left: 7%;
+        margin-right: 7%;
         float: left;
         width: 5%;
         height: 5%;
@@ -47,7 +52,7 @@
     
     nav .top ul li a {
         display: inline-block;
-        width: 60px;
+        width: 61px;
         height: 30px;
         text-align: center;
         color: rgb(0, 0, 0);
@@ -81,14 +86,14 @@
     nav .top ul li .qqE-mail b {
         position: absolute;
         top: -50px;
-    }
-    
-    nav .top ul li .qqE-mail:hover b {
-        position: absolute;
         top: 30px;
         right: 0px;
         color: #000000;
+        opacity: 0;
     }
+    /* nav .top ul li .qqE-mail:hover b {
+        position: absolute;
+    } */
     /* 顶部导航结束 */
     
     section {
@@ -177,6 +182,7 @@
     }
     
     main article {
+        position: relative;
         cursor: pointer;
         overflow: hidden;
         display: flex;
@@ -272,4 +278,15 @@
     
     main article div a:hover img {
         transform: scale(0.8);
+    }
+    
+    aside {
+        position: fixed;
+        top: 30%;
+        right: 0px;
+        width: 60px;
+        height: 50px;
+        text-align: center;
+        font-size: 40px;
+        opacity: 0;
     }
