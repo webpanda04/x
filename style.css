@@ -288,4 +288,5 @@
         text-align: center;
         font-size: 40px;
         opacity: 0;
+        transition: all 0.3s;
     }
