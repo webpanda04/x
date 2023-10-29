@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css_Demo
+    </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <div class="item">
+            <ul>
+                <li class="color
+                ">
+                    <a href="#">主页</a>
+                </li>
+                <li>
+                    <a href="#">产品</a>
+                </li>
+                <li>
+                    <a href="#">联系</a>
+                </li>
+                <li>
+                    <a href="#">帮助</a>
+                </li>
+                <li>
+                    <a href="#">用户</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script>
+        const getA = document.querySelectorAll('ul li a');
+        for (let i = 0; i < getA.length; i++) {
+            getA[i].addEventListener('mouseover', function(eve) {
+                if (eve.target.tagName === "A") {
+                    document.querySelector('.item ul .color').classList.remove('color');
+                    this.classList.add('color');
+                };
+            });
+        };
+    </script>
+</body>
+
+</html>
