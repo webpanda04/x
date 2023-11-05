@@ -47,8 +47,6 @@ const getAside = document.querySelector('aside');
 window.addEventListener('scroll', function () {
     let Top = getAside.offsetTop;
     let n = getAside.style.opacity = Top <= document.documentElement.scrollTop ? 1 : 0;
-    console.log(n);
-
 });
 
 // window.addEventListener('scroll', function () {
