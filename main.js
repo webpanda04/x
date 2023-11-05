@@ -51,20 +51,20 @@ window.addEventListener('scroll', function () {
 
 });
 
-// window.addEventListener('scroll', function () {
-//     let Aroll = document.documentElement.scrollTop;
-//     if (Aroll >= 250) {
-//         getAside.style.opacity = 1;
-//         getAside.addEventListener('click', function () {
-//             window.scrollTo({
-//                 top: 0,
-//                 behavior: 'smooth'
-//             });
-//             // window.scroll(0, 0); 
-//             //widow.scrollto 里面两个对象一个返回顶部 一个返回平滑
-//         })
-//     } else {
-//         getAside.style.opacity = 0;
-//     }
-//     console.log(Aroll);
-// })
+window.addEventListener('scroll', function () {
+    let Aroll = document.documentElement.scrollTop;
+    if (Aroll >= 250) {
+        getAside.style.opacity = 1;
+        getAside.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+            // window.scroll(0, 0); 
+            //widow.scrollto 里面两个对象一个返回顶部 一个返回平滑
+        })
+    } else {
+        getAside.style.opacity = 0;
+    }
+    console.log(Aroll);
+})
