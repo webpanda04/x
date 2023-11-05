@@ -2,26 +2,33 @@
         margin: 0;
         padding: 0;
     }
-    
+
     a {
         color: black;
         text-decoration: none;
     }
-    
+
     body {
-        background-image: url(./img/bj01.jpg);
+        height: 3000px;
     }
-    
+
+    .main_1 {
+        background-size: auto;
+        background-image: url(./img/bj01.jpg);
+        width: 100%;
+        height: 1667px;
+    }
+
     .open {
         display: block;
     }
-    
+
     nav {
         z-index: 999;
         width: 100%;
         height: 50px;
     }
-    
+
     nav .top {
         position: sticky;
         top: 0;
@@ -33,13 +40,13 @@
         height: 32px;
         background-color: rgb(77, 77, 77, 0.5);
     }
-    
+
     nav .top ul {
         width: 20rem;
         height: 5rem;
         list-style: none;
     }
-    
+
     nav .top ul li {
         margin-left: 7%;
         margin-right: 7%;
@@ -48,7 +55,7 @@
         height: 5%;
         line-height: 30px;
     }
-    
+
     nav .top ul li a {
         display: inline-block;
         width: 61px;
@@ -59,28 +66,28 @@
         box-sizing: border-box;
         font-size: 14px;
     }
-    
+
     nav .top ul li a:hover {
         color: rgb(242, 246, 250);
         border: 0px;
         box-shadow: inset 1px -1px 5px 4px #928f8f82;
         transform: scale(1.1);
     }
-    
+
     nav .top ul li a img {
         margin-top: 5px;
         width: 20px;
         height: 20px;
         background-size: cover;
     }
-    
+
     nav .top ul li .qqE-mail {
         position: relative;
         width: 80px;
         height: 100%;
         color: #313131;
     }
-    
+
     nav .top ul li .qqE-mail b {
         position: absolute;
         top: -50px;
@@ -89,11 +96,9 @@
         color: #000000;
         opacity: 0;
     }
-    /* nav .top ul li .qqE-mail:hover b {
-        position: absolute;
-    } */
+
     /* 顶部导航结束 */
-    
+
     section {
         position: relative;
         display: flex;
@@ -108,13 +113,13 @@
         font-size: 24px;
         border-radius: 5px;
     }
-    
+
     section p {
         position: absolute;
         top: 40px;
         margin-top: 40px
     }
-    
+
     section img {
         width: 38vh;
         height: 30vh;
@@ -123,8 +128,9 @@
         height: auto;
         max-width: 100%;
     }
+
     /* 轮博图结束 */
-    
+
     header {
         display: flex;
         flex-direction: row;
@@ -141,6 +147,7 @@
         background: linear-gradient(to left, #72ed84, #0991db);
         animation: domocolor 3s cubic-bezier(0.43, -0.15, 0.58, 1) infinite alternate;
     }
+
     /*@keyframes domocolor {
     0% {
         background: linear-gradient(to left, #d3959b, #bfe6ba);
@@ -149,7 +156,7 @@
         background: linear-gradient(to left, #b29295, #8ab484);
     }
 }*/
-    
+
     header .text {
         position: absolute;
         top: 20px;
@@ -157,7 +164,7 @@
         text-align: center;
         line-height: 15vh;
     }
-    
+
     header .box_img {
         align-items: center;
         position: absolute;
@@ -167,7 +174,7 @@
         background-image: url(./img/3141683800567_.pic-removebg-preview.png);
         background-size: cover;
     }
-    
+
     main {
         display: flex;
         justify-content: center;
@@ -178,7 +185,7 @@
         height: 800px;
         border-radius: 5%;
     }
-    
+
     main article {
         position: relative;
         cursor: pointer;
@@ -192,7 +199,7 @@
         border-radius: 21px;
         box-shadow: 21px 21px 42px #9df2f91f, -21px -21px 42px #9df2f91f;
     }
-    
+
     main article div {
         margin-top: 10px;
         width: 230px;
@@ -204,18 +211,18 @@
         transition: all 0.6s;
         border-radius: 5%;
     }
-    
+
     main article div:hover {
         transform: scale(0.9);
         box-shadow: 10px 13px 6px 0px rgba(171, 164, 164, 0.539);
     }
-    
+
     main article div a {
         position: relative;
         width: 100%;
         height: 100%;
     }
-    
+
     main article div a .item,
     .item-k3 {
         z-index: -1;
@@ -230,7 +237,7 @@
         text-align: center;
         margin: auto;
     }
-    
+
     main article div a .item-k3 {
         z-index: -1;
         position: absolute;
@@ -244,40 +251,40 @@
         text-align: center;
         margin: auto;
     }
-    
+
     main article div a:hover .item,
     .item-k3 {
         z-index: 0;
         opacity: 1;
         top: 0px;
     }
-    
+
     main article div a:hover .item {
         margin-left: 30%;
         margin-right: 10%;
         width: 80%;
     }
-    
+
     main article div a:hover .item-k3 {
         margin-left: 10%;
         margin-right: 10%;
         width: 80%;
     }
-    
+
     main article div a h4 {
         margin-top: 10px;
     }
-    
+
     main article div img {
         width: 100%;
         height: 68%;
         transition: all 0.6s;
     }
-    
+
     main article div a:hover img {
         transform: scale(0.8);
     }
-    
+
     aside {
         position: fixed;
         top: 30%;
