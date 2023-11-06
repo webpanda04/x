@@ -7,39 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css_Demo
     </title>
-    <link rel="stylesheet" href="./style.css">
+    <style>
+        ul {
+            margin: 200px auto;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 800px;
+            height: 80px;
+            background-color: #34495e;
+            border-radius: 2rem;
+            border: 0.2vw solid rgb(28, 39, 60);
+        }
+
+        li,
+        a,
+        .item {
+            width: 80px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            color: cornsilk;
+            text-decoration: none;
+        }
+
+        .item {
+            position: absolute;
+            left: 107px;
+            color: rgb(168, 230, 106);
+            background-color: rgba(6, 243, 243, 0.3);
+            border-radius: 10px;
+            box-shadow: -5px 2px 8px 1px;
+            transition: all 0.3s;
+        }
+    </style>
 </head>
 
 <body>
-    <main>
-        <div class="item">
-            <ul>
-                <li class="color
-                ">
-                    <a href="#">主页</a>
-                </li>
-                <li>
-                    <a href="#">产品</a>
-                </li>
-                <li>
-                    <a href="#">联系</a>
-                </li>
-                <li>
-                    <a href="#">帮助</a>
-                </li>
-                <li>
-                    <a href="#">用户</a>
-                </li>
-            </ul>
-        </div>
-    </main>
+    <ul>
+        <div class="item"></div>
+        <a href="#">主页</a>
+        <a href="#">产品</a>
+        <a href="#">联系</a>
+        <a href="#">帮助</a>
+        <a href="#">用户</a>
+    </ul>
     <script>
-        const getA = document.querySelectorAll('ul li a');
+        const getA = document.querySelectorAll('ul  a');
+        const sliding = document.querySelector('ul .item');
         for (let i = 0; i < getA.length; i++) {
-            getA[i].addEventListener('mouseover', function(eve) {
+            getA[i].addEventListener('click', function (eve) {
                 if (eve.target.tagName === "A") {
-                    document.querySelector('.item ul .color').classList.remove('color');
-                    this.classList.add('color');
+                    sliding.style.left = `${eve.target.offsetLeft}px`;
                 };
             });
         };
