@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                main {
+                        display: flex;
+                        margin: 100px auto;
+                        width: 1000px;
+                        height: 500px;
+                        border: 1px solid #000;
+                        justify-content: center;
+                        align-items: center;
+                }
+
+                main div {
+                        width: 250px;
+                        height: 250px;
+                        border: 1px solid #000;
+                }
+        </style>
+</head>
+
+<body>
+        <main>
+                <div>
+                        <img src="" alt="">
+                </div>
+        </main>
+        <script>
+                const getMain = document.querySelector("main");
+
+                const arr = ["https://img.500px.me/photo/49f1fde554288bd90fbbba0b35c8a4976/7b42a93b3ae5413e883e866116bc8f93.jpg!p5", "https://img.500px.me/photo/875d5e8a341c695c3b1274d3e3d357606/540c46ae8d514502bdd713b38983ca27.jpg!p5_sw", "https://img.500px.me/500px1083230440.jpg!p5", "https://img.500px.me/photo/722f3ffbf408c91d541d113985e484653/4db039c2b89946d185a039b8eb26e0be.jpg!p5"];
+                for (let i = 0; i < arr.length; i++) {
+                        const div = document.createElement("div");
+                        div.innerHTML = `<img src='${arr[i]}'>`
+                        getMain.appendChild(div);
+                        console.log(arr[i
+                        ]);
+                }
+        </script>
+</body>
+
+</html>

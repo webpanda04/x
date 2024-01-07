@@ -66,3 +66,4 @@ window.addEventListener('scroll', function () {
 //     }
 //     console.log(Aroll);
 // })
+const Arrdata = [{ URL:}]
