@@ -38,32 +38,11 @@ getTop_qqEmail.addEventListener('mouseover', function () {
 getTop_qqEmail.addEventListener('mouseout', function () {
     getTop_qqEmaliB.style.opacity = 0;
 }) //鼠标离开消失
-//
-// 
-// 
 // aside滚动栏显示
 const getAside = document.querySelector('aside');
-// let docEl_scroll=document.documentElement.scrollTop
 window.addEventListener('scroll', function () {
     let Top = getAside.offsetTop;
     let n = getAside.style.opacity = Top <= document.documentElement.scrollTop ? 1 : 0;
 });
 
-// window.addEventListener('scroll', function () {
-//     let Aroll = document.documentElement.scrollTop;
-//     if (Aroll >= 250) {
-//         getAside.style.opacity = 1;
-//         getAside.addEventListener('click', function () {
-//             window.scrollTo({
-//                 top: 0,
-//                 behavior: 'smooth'
-//             });
-//             // window.scroll(0, 0); 
-//             //widow.scrollto 里面两个对象一个返回顶部 一个返回平滑
-//         })
-//     } else {
-//         getAside.style.opacity = 0;
-//     }
-//     console.log(Aroll);
-// })
-const Arrdata = [{ URL:}]
+const data_article = [{ Text: '随机<i>吃</i>什么？', Image: './案例/0-2chi/icon_吃什么.png ' },]
